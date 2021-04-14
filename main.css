@@ -1,0 +1,31 @@
+
+
+
+
+.data {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+input[type="radio"] {
+    color: red;
+}
+.title {
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.title h1 {
+    color: ;
+
+}
+
+.form {
+    width: 75%;
+    margin: 2rem auto 0 auto;
+}
+.block {
+    display: block;
+}
