@@ -10,41 +10,68 @@
 <body>
     <main id="main">
         <div class="title" id="">
-          <h1 id="title">Title Text</h1>
-          <p id="description">Description</p>
+          <h1 id="title">Software Develpment Survey</h1>
+          <p id="description">Let us know about your software development interests</p>
         </div>
         <fieldset class="form">
         <form action="" id="survey-form">
-          <label class="data" id="name-label" for="name">Name</label>
-          <input class="data" type="text" id="name" required="required" placeholder="Enter your name">
-          <label class="data" id="email-label" for="email">Email</label>
-          <input class="data" type="email" id="email" required="required" placeholder="Enter your email">
-          <label class="data" id="number-label" for="age">Age</label>
-          <input class="data" type="number" id="number" min="18" max="120" placeholder="Age">
-          <label class="data" id="dropdown-label" for="dropdown">Dropdown</label>
-          <select class="data" name="" id="dropdown">
-            <option  value="">""</option>
-            <option  value="">""</option>
-            <option  value="">""</option>
-          </select>
-          <span class="data">Please do something</span>
-          <input class="data" type="radio" name="doSomething" value="this" id="doSomethingChoice1">
-          <label class="data" for="doSomethingChoice1">Choice1</label>
-          <input class="data" type="radio" name="doSomething" value="that" id="doSomethingChoice2">
-          <label class="data" for="doSomethingChoice2">Choice2</label>
-          <input class="data" type="radio" name="doSomething" value="other" id="doSomethingChoice3">
-          <label for="doSomethingChoice3">Choice3</label>
-          <span>Check a checkbox</span>
-          <input type="checkbox" id="this" value="this" name="this">
-          <label for="this">This</label>
-          <input type="checkbox" id="that" value="that" name="that">
-          <label for="that">That</label>
-          <input type="checkbox" id="other" value="other" name="other">
-          <label for="other">Other</label>
-          <label for="comments">Additional Coments</label>
-          <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-          <button id="submit">Submit</button>
-        </form>
+          <div class="text">
+            <label class="data" id="name-label" for="name">Name</label>
+            <input class="data" type="text" id="name" required="required" placeholder="Enter your name">
+            <label class="data" id="email-label" for="email">Email</label>
+            <input class="data" type="email" id="email" required="required" placeholder="Enter your email">
+            <label class="data" id="number-label" for="age">Age</label>
+            <input class="data" type="number" id="number" min="18" max="120" placeholder="Age">
+            
+          </div>
+          <div class="select">
+            <label class="data" id="dropdown-label" for="dropdown" >Current Level of Development Experience</label>
+            <select class="data" name="dropdown" id="dropdown">
+              <option value="" disabled selected>Time Developing</option>
+              <option  value="0-1years">0-1 years</option>
+              <option  value="1-5years">1-5 years</option>
+              <option  value="5+years">5+ years</option>
+            </select>
+          </div>
+          <div class="radio">
+            <span class="data" id="span">Choose and Area of Interest</span>
+            <div class="radio-button">
+              <input class="data" type="radio" name="interest" value="web-development" id="web-development">
+              <label class="" for="web-development">Web Development</label>
+            </div>  
+            <div class="radio-button">
+              <input class="data" type="radio" name="interest" value="application-development" id="application-development">
+              <label class="" for="application-development">Application Development</label>
+            </div>
+            <div class="radio-button">
+              <input class="data" type="radio" name="interest" value="systems-development" id="systems-development">
+              <label class="" for="systems-development">Systems Development</label>
+            </div>
+          </div> 
+          <div class="checkbox">
+            <span class="data" id="span">Check a checkbox</span>
+            <div class="checkbox-box">
+              <input class="data" type="checkbox" id="this" value="this" name="this">
+              <label class="data" for="this">This</label>
+            </div>
+            <div class="checkbox-box">
+              <input class="data" type="checkbox" id="that" value="that" name="that">
+              <label class ="data" for="that">That</label>
+            </div>
+            <div class="checkbox-box">
+              <input class="data" type="checkbox" id="other" value="other" name="other">
+              <label class="data" for="other">Other</label>
+            </div>
+          </div>
+          <div class="textarea">
+            <label class="data" for="comments">Additional Coments</label>
+            <textarea class="data" name="comments" id="comments" cols="30" rows="10"></textarea>
+          </div>
+          <div class="button">
+            <button class="data" id="submit">Submit</button>
+          </div>
+
+          </form>
         </fieldset>
       </main>
 

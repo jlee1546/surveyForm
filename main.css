@@ -1,31 +1,59 @@
-
-
-
-
-.data {
-    display: block;
-    margin: 0 auto;
-    width: 75%;
-}
-input[type="radio"] {
-    color: red;
+body {
+    background: rgba(35,35,35,0.1);
 }
 .title {
+    width: 75%;
     margin: 0 auto;
-    width: 50%;
-    border: 1px solid black;
     text-align: center;
 }
 
-.title h1 {
-    color: ;
-
+.title p {
+    margin: 0.5rem auto;
 }
 
 .form {
-    width: 75%;
-    margin: 2rem auto 0 auto;
+    background: #9198e5;
 }
-.block {
+
+.text label,
+.text input {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.text input {
+    margin-bottom: 0.5rem;
+}
+
+.select label,
+.select select {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
+.radio {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.checkbox {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.textarea {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.textarea label {
     display: block;
 }
+
+.button {
+    width: 75%;
+    margin: 0 auto;
+}
+
