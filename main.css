@@ -1,10 +1,21 @@
+html,
+body {
+    margin: 0;
+}
+
 body {
     background: rgba(35,35,35,0.2);
+    
+}
+
+.main {
+    border: 1px solid black;
 }
 .title {
     width: 75%;
     margin: 0 auto;
     text-align: center;
+    color: green;
 }
 
 .title h1 {
@@ -17,25 +28,65 @@ body {
 
 .form {
     background: #9198e5;
+    width: 100%;
+    border: 5px solid green;
+    padding: 2rem 0.5rem;
+    
+    
 }
+
+.form form {
+    margin-left: 1rem;
+}
+
+
+@media (min-width: 25rem) {
+    .form {
+        width: 75%;
+        margin: 0 auto;
+        padding: 2.5rem;
+        max-width: 45rem;
+    }
+    .text label,
+    .text input {
+    
+    width: 100%;
+    margin: 0 auto;
+    }
+    .select label,
+    .select select {
+    width: 100%;
+    margin: 0 auto;
+    
+    
+    }
+
+}
+
+
 .text {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+    
+    
 }
 .text label,
 .text input {
     display: block;
     width: 75%;
-    margin: 0 auto;
+    
+    
 }
 
 .text label {
     font-size: 1.25rem;
+    padding: 0.25rem;
 }
 .text input {
     margin-bottom: 0.5rem;
-    border: 1px solid black;
+    border: 2px solid green;
     font: inherit;
     color: blue;
+    padding: 0.25rem;
 }
 
 .select {
@@ -45,7 +96,13 @@ body {
 .select select {
     width: 75%;
     display: block;
-    margin: 0 auto;
+    font: inherit;
+    
+}
+
+.select select {
+    border: 2px solid green;
+    padding: 0.25rem;
 }
 
 .select label {
@@ -54,7 +111,7 @@ body {
 
 .radio {
     width: 75%;
-    margin: 0 auto;
+    
     margin-bottom: 1rem;
 }
 
@@ -67,13 +124,13 @@ body {
 
 .checkbox {
     width: 75%;
-    margin: 0 auto;
+    
     margin-bottom: 1rem;
 }
 
 .textarea {
     width: 75%;
-    margin: 0 auto;
+    min-height: 8rem;
     margin-bottom: 1rem;
 }
 
@@ -81,10 +138,27 @@ body {
     display: block;
     font-size: 1.25rem;
     padding-bottom: 0.5rem;
+    
 }
 
-.button {
-    width: 75%;
-    margin: 0 auto;
+.textarea textarea {
+    width: 100%;
+    max-width: 100%;
+    resize: vertical;
+}
+
+.button  button {
+    background: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+}
+
+.button button:hover,
+.button button:active {
+    color: green;
+    background: white;
+    border-color: transparent;
 }
 
