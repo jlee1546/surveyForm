@@ -73,6 +73,7 @@ body {
 .text input {
     display: block;
     width: 75%;
+    margin: 0 auto;
     
     
 }
@@ -82,11 +83,15 @@ body {
     padding: 0.25rem;
 }
 .text input {
-    margin-bottom: 0.5rem;
+    
     border: 2px solid green;
     font: inherit;
     color: blue;
     padding: 0.25rem;
+}
+
+.text input {
+    outline: none;
 }
 
 .select {
@@ -103,6 +108,11 @@ body {
 .select select {
     border: 2px solid green;
     padding: 0.25rem;
+    width: 77.2%;
+}
+
+.select select:focus {
+    outline: none;
 }
 
 .select label {
@@ -111,7 +121,7 @@ body {
 
 .radio {
     width: 75%;
-    
+    margin: 0 auto;
     margin-bottom: 1rem;
 }
 
@@ -124,14 +134,31 @@ body {
 
 .checkbox {
     width: 75%;
-    
+    margin: 0 auto;
     margin-bottom: 1rem;
+    
 }
+
+
+
+
+
+.checkbox input,
+.checkbox label {
+    vertical-align: bottom;
+}
+
+.checkbox input:focus {
+    outline: none;
+}
+
 
 .textarea {
     width: 75%;
     min-height: 8rem;
+
     margin-bottom: 1rem;
+    margin: 0 auto;
 }
 
 .textarea label {
@@ -147,6 +174,10 @@ body {
     resize: vertical;
 }
 
+.textarea textarea:focus {
+    outline: none;
+}
+
 .button  button {
     background: green;
     color: white;
@@ -155,10 +186,13 @@ body {
     padding: 0.25rem 0.5rem;
 }
 
+
+
 .button button:hover,
 .button button:active {
     color: green;
     background: white;
     border-color: transparent;
 }
+
 
