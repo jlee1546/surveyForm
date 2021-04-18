@@ -205,6 +205,7 @@ body {
 
     .button button {
         width: 25%;
+        min-width: 80px;
     }
 
 }
