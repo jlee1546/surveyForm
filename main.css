@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
@@ -6,38 +10,177 @@ body {
 body {
     background: rgba(35,35,35,0.2);
     
+    
 }
 
 .main {
     border: 1px solid black;
 }
 .title {
-    width: 75%;
-    margin: 0 auto;
-    text-align: center;
-    color: green;
+    width: 100%;
+    font-family: Helvetica;
+    color: rgba(0,0,0,0.7)
 }
 
 .title h1 {
-    margin: 1.5rem auto 0.5rem auto;
+    margin: 2rem auto 0.5rem auto;
+    text-align: center;
+    width: 90%;
+    
 }
 
 .title p {
     margin: 0.5rem auto 1.5rem auto;
+    text-align: center;
+    width: 90%;
 }
 
 .form {
     background: #9198e5;
-    width: 100%;
-    border: 5px solid green;
-    padding: 2rem 0.5rem;
+    width: 100vw;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    
+    
     
     
 }
 
-.form form {
-    margin-left: 1rem;
+.text {
+    margin: 1rem 0;
+    padding-left: 0.5rem;
+    width: 90%; 
+     
+    
 }
+
+.text label,
+.text input {
+    display: block;
+}
+
+.text label {
+    font-size: 1.25rem;
+    padding-bottom: 0.25rem;
+    
+}
+.text input {
+    
+    border: 2px solid green;
+    font: inherit;
+    color: blue;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+    width: 90%;
+}
+
+.text input {
+    outline: none;
+}
+
+.select {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    width: 90%;
+}
+.select label,
+.select select {
+    width: 75%;
+    display: block;
+    font: inherit;
+    
+    
+}
+
+.select select {
+    border: 2px solid green;
+    padding: 0.25rem;
+    
+}
+
+.select select:focus {
+    outline: none;
+}
+
+.select label {
+    font-size: 1.25rem;
+}
+
+.radio {
+    width: 90%;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#span {
+    display: block;
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+    
+}
+
+.checkbox {
+    width: 90%;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.checkbox input:focus {
+    outline: none;
+}
+
+
+.textarea {
+    width: 100%;
+    min-height: 8rem;
+
+    margin-bottom: 1rem;
+    
+}
+
+.textarea label {
+    display: block;
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+    
+}
+
+.textarea textarea {
+    width: 100%;
+    
+    resize: vertical;
+}
+
+.textarea textarea:focus {
+    outline: none;
+}
+
+.button {
+    width: 100%;
+    
+}
+
+.button  button {
+    background: green;
+    color: white;
+    font-size: 1.25rem;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+
+
+.button button:hover,
+.button button:active {
+    color: green;
+    background: white;
+    border-color: transparent;
+}
+
+
 
 
 @media (min-width: 25rem) {
@@ -53,146 +196,15 @@ body {
     width: 100%;
     margin: 0 auto;
     }
+
     .select label,
     .select select {
     width: 100%;
     margin: 0 auto;
-    
-    
+    }
+
+    .button button {
+        width: 25%;
     }
 
 }
-
-
-.text {
-    margin: 1rem 0;
-    
-    
-}
-.text label,
-.text input {
-    display: block;
-    width: 75%;
-    margin: 0 auto;
-    
-    
-}
-
-.text label {
-    font-size: 1.25rem;
-    padding: 0.25rem;
-}
-.text input {
-    
-    border: 2px solid green;
-    font: inherit;
-    color: blue;
-    padding: 0.25rem;
-}
-
-.text input {
-    outline: none;
-}
-
-.select {
-    margin-bottom: 1rem;
-}
-.select label,
-.select select {
-    width: 75%;
-    display: block;
-    font: inherit;
-    
-}
-
-.select select {
-    border: 2px solid green;
-    padding: 0.25rem;
-    width: 77.2%;
-}
-
-.select select:focus {
-    outline: none;
-}
-
-.select label {
-    font-size: 1.25rem;
-}
-
-.radio {
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-}
-
-#span {
-    display: block;
-    font-size: 1.25rem;
-    padding-bottom: 0.5rem;
-    
-}
-
-.checkbox {
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    
-}
-
-
-
-
-
-.checkbox input,
-.checkbox label {
-    vertical-align: bottom;
-}
-
-.checkbox input:focus {
-    outline: none;
-}
-
-
-.textarea {
-    width: 75%;
-    min-height: 8rem;
-
-    margin-bottom: 1rem;
-    margin: 0 auto;
-}
-
-.textarea label {
-    display: block;
-    font-size: 1.25rem;
-    padding-bottom: 0.5rem;
-    
-}
-
-.textarea textarea {
-    width: 100%;
-    max-width: 100%;
-    resize: vertical;
-}
-
-.textarea textarea:focus {
-    outline: none;
-}
-
-.button  button {
-    background: green;
-    color: white;
-    border: 1px solid green;
-    border-radius: 5px;
-    padding: 0.25rem 0.5rem;
-}
-
-
-
-.button button:hover,
-.button button:active {
-    color: green;
-    background: white;
-    border-color: transparent;
-}
-
-
